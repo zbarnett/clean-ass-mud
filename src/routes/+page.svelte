@@ -4,7 +4,7 @@ Search: <input type="text" bind:value={searchTerm}>
 
 <h2>{results.length} items matching: {searchTerm}</h2>
 <table>
-    <tr><th>Name</th><th>material</th></tr>
+    <tr><th>Name</th><th>type</th><th>material</th><th>flags</th><th>held by</th><th>slot</th></tr>
     {#each results as item}
         <tr>
             <td>{item.name}</td>
